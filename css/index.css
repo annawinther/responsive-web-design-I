@@ -169,7 +169,6 @@ h1, h2, h3, h4, h5 {
         width:100%;
         text-align:center;
     }
-
    .row .contact{
         display: flex;
         flex-direction: column;
@@ -178,42 +177,36 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-
 @media(max-width: 500px){
     nav{
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
-
+    .row{
+        flex-direction: column !important;
+        justify-content: space-evenly;
+        margin: 10%;
+    }
     .nav-item{
         padding-bottom:20px;
         border-bottom: 1px solid black;
         border-radius: 1px 1px 1px 1px;
         text-align: center;
     }
-    .row{
-        flex-direction: column !important;
-        justify-content: space-evenly;
-        margin: 10%;
-
-    }
-    .sub-title{
+   .start{
         text-align: center;
-        font-size: 0.5rem;
-        
+        width: 100%;
     }
-    #start{
+    .row p{
         flex-direction: row;
-        justify-content: baseline;
-        align-content: center !important;
+        margin: 20px;
+        width: 100%
     }
+    
 }
-
 
 .logo {
 	margin-top:10px;
 }
-
 .sub-title{
 	display: flex;
 	padding-bottom: 20px;
