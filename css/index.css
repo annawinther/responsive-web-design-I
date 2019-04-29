@@ -152,8 +152,34 @@ h1, h2, h3, h4, h5 {
   flex-wrap: nowrap;
 }
 
-.nav-item:hover{
-	background-color: #e3e3e3;
+.tablet-only{
+    display:none;
+}
+
+
+@media(max-width: 800px){
+    .desktop-only{
+        display:none !important;
+    }
+    .tablet-only{
+        display:block;
+        width:100%;
+        text-align:center;
+        font-size: 
+    }
+
+
+}
+
+@media(max-width: 500px){
+    nav{
+        flex-direction: column !important;
+    }
+    .row{
+        flex-direction: column !important;
+        justify-content: space-between;
+        margin: 10%;
+    }
 }
 
 
@@ -277,6 +303,10 @@ h1, h2, h3, h4, h5 {
 	margin-top: 20px;
 }
 
+.middle-img{
+    width: 100%;
+
+}
 /* Reduced width to fix margin/padding */
 .col-50{
 	width: 43%;
