@@ -156,6 +156,9 @@ h1, h2, h3, h4, h5 {
     display:none;
 }
 
+:root{
+    font-size: 16px;
+}
 
 @media(max-width: 800px){
     .desktop-only{
@@ -165,20 +168,44 @@ h1, h2, h3, h4, h5 {
         display:block;
         width:100%;
         text-align:center;
-        font-size: 
     }
 
-
+   .row .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        justify-content: space-between;
+    }
 }
+
 
 @media(max-width: 500px){
     nav{
-        flex-direction: column !important;
+        flex-direction: column;
+        
+    }
+
+    .nav-item{
+        padding-bottom:20px;
+        border-bottom: 1px solid black;
+        border-radius: 1px 1px 1px 1px;
+        text-align: center;
     }
     .row{
         flex-direction: column !important;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin: 10%;
+
+    }
+    .sub-title{
+        text-align: center;
+        font-size: 0.5rem;
+        
+    }
+    #start{
+        flex-direction: row;
+        justify-content: baseline;
+        align-content: center !important;
     }
 }
 
